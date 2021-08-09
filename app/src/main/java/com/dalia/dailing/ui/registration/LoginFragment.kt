@@ -38,7 +38,7 @@ class LoginFragment : Fragment() {
 
         binding.loginButton.setOnClickListener {
             viewModel.loggedInSuccessful()
-            view?.findNavController()?.navigate(LoginFragmentDirections.actionLoginFragmentToContainerHomeFragment())
+            view?.findNavController()?.safeNavigate(LoginFragmentDirections.actionLoginFragmentToContainerHomeFragment())
         }
 
 //        viewModel.isLoggedIn.observe(viewLifecycleOwner, Observer {
