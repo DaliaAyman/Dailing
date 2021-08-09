@@ -1,0 +1,95 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+
+androidExtensions {
+    experimental = true
+}
+
+android {
+//    compileSdkVersion Versions.compileSdkVersion
+//    buildToolsVersion Versions.buildTool
+//    defaultConfig {
+//        minSdkVersion Versions.minSdk
+//        targetSdkVersion Versions.targetSdk
+//        versionCode Releases.versionCode
+//        versionName Releases.versionName
+//        vectorDrawables.useSupportLibrary = true
+//    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kapt {
+        javacOptions {
+            // Increase the max count of errors from annotation processors.
+            // Default is 100.
+            option("-Xmaxerrs", 500)
+        }
+        // Configure kapt to correct error types for Hilt
+        correctErrorTypes true
+    }
+
+    buildFeatures{
+        dataBinding = true
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    //Loads packaged libraries in the libs folder
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+//    implementation KotlinLibraries.kotlin
+//    implementation AndroidLibraries.coreKtx
+//
+//    implementation Libraries.hilt
+//    implementation Libraries.hiltJetpack
+//    kapt Libraries.hiltCompiler
+//    kapt Libraries.hiltJetpackCompiler
+//
+//    // For instrumentation tests
+//    androidTestImplementation Libraries.hiltAndroidTest
+//    kaptAndroidTest Libraries.hiltAndroidTestCompiler
+//
+//    // For local unit tests
+//    testImplementation Libraries.hiltAndroidUnitTest
+//    kaptTest Libraries.hiltAndroidUnitTestCompiler
+//
+//    implementation TestLibraries.androidTestRunner
+//    implementation TestLibraries.junit
+//    implementation TestLibraries.espresso
+//    implementation TestLibraries.espressoContrib
+
+    // Concurrency
+    implementation "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+
+    //Hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_androidx_version"
+    kapt "androidx.hilt:hilt-compiler:$hilt_androidx_version"
+
+    // Utils
+    implementation "com.jakewharton.threetenabp:threetenabp:$threetenabp_version"
+
+
+}

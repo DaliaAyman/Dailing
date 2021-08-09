@@ -1,0 +1,10 @@
+include ':external'
+include ':device'
+include ':domain'
+include ':common'
+include ':presentation'
+include ':remote'
+include ':cache'
+include ':data'
+include ':app'
+rootProject.name = "Dailing"
