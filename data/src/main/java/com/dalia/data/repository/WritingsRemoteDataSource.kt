@@ -1,0 +1,3 @@
+package com.dalia.data.repository
+
+interface WritingsRemoteDataSource

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:fontFamily">@font/montserrat</item>
+    </style>
+
+    <style name="AppTheme.Button.Colored">
+        <item name="colorButtonNormal">@color/white</item>
+<!--        <item name="android:fontFamily">@font/montserrat</item>-->
+        <item name="android:background">@drawable/button_shape_colored</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+    </style>
+
+    <style name="AppTheme.Button.Colored.Small">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/button_shape_colored</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+    </style>
+
+    <style name="AppTheme.Button.Outline">
+        <item name="colorButtonNormal">@color/white</item>
+        <item name="android:textColor">@color/button_color</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:backgroundTint">@null</item>
+        <item name="android:background">@drawable/button_shape_outline</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+    </style>
+
+<!--    android:background="@android:drawable/btn_minus"-->
+<!--    android:drawableEnd="@drawable/ic_right_arrow_next_btn"-->
+<!--    android:textColor="@color/text_color_dark"-->
+<!--    android:textStyle="bold"-->
+<!--    app:backgroundTint="@android:color/transparent"-->
+
+    <style name="AppTheme.Button.Transparent">
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="backgroundTint">@android:color/transparent</item>
+    </style>
+</resources>

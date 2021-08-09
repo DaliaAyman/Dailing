@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/text_color_dark</item>
+<!--        <item name="android:fontFamily">@font/montserrat</item>-->
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.TextView.Title">
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="AppTheme.TextView.InAppTitle">
+        <item name="android:textColor">@color/text_color_dark</item>
+        <item name="android:textSize">35sp</item>
+    </style>
+
+    <style name="AppTheme.TextView.Subtitle">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="AppTheme.TextView.SubtitleSmall">
+        <item name="android:textColor">@color/grey</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="AppTheme.TextView.RegularText">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/text_color_dark</item>
+    </style>
+</resources>
