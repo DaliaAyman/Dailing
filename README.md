@@ -16,14 +16,13 @@ Sample Android App to demonstrate & apply different technologies.
 <body>
 
 
-<table style="border: 0px">
+<table border="0" rules=none>
     <tr>
-      
       <td>
-          <p>Writing a personal daily note can help you fully explore your emotions, release tension, and fully integrate your experiences into your mind.</p>
-<p> Using your mobile phone can be stressful & overwhelming with all the social networks around. </p>
+          Writing a personal daily note can help you fully <br>explore your emotions, release tension, <br>and fully integrate your experiences into your mind.</p>
+<p> Using your mobile phone can be stressful & overwhelming <br>with all the social networks around. </p>
 
-<p>So, this is your chance to set your mind free in only 10 mins and start "dailing" your daily notes. </p>
+<p>So, this is your chance to set your mind free <br>in only 10 mins and start "dailing" your daily notes. </p>
       </td>
       <td>
           <img src="https://media.giphy.com/media/lfDDKM8oRUBwXkJmGe/giphy.gif">
