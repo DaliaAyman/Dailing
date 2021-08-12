@@ -44,6 +44,10 @@ Flow:
 3.  If signed in
 	- Splash -> Home
 ```
+
+Navigation Graph
+<img src="https://imgur.com/xdICT4y.png">
+
 2- Other features are coming soon...
 
 
